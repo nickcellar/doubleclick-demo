@@ -10,6 +10,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
+import com.google.android.gms.ads.doubleclick.AppEventListener
 import com.google.android.gms.ads.doubleclick.PublisherAdRequest
 import com.google.android.gms.ads.doubleclick.PublisherAdView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -53,6 +54,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 .build()
         for (view in views) {
             view.loadAd(adRequest)
+            view.appEventListener = AppEventListener()
         }
     }
 
