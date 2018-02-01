@@ -7,7 +7,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.tinklabs.myapplication"
+        applicationId "com.tinklabs.handy.doubleclickdemo"
         minSdkVersion 18
         targetSdkVersion 26
         versionCode 1
@@ -30,7 +30,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.google.android.gms:play-services-ads:11.6.2'
     testImplementation 'junit:junit:4.12'

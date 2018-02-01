@@ -26,9 +26,16 @@ class MainActivity : AppCompatActivity() {
         views.add(adView5)
 
         val adRequest = PublisherAdRequest.Builder()
-//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)        // All emulators
-//                .addTestDevice("73FB16A586A92434E9C7BEA93A8CBCC7")        // All emulators
+                .addCustomTargeting("country", "25")
+                .addCustomTargeting("city", "25")
+                .addCustomTargeting("hotel", "25")
+                .addCustomTargeting("lang", "25")
+                .addCustomTargeting("rating", "25")
+                .addCustomTargeting("lockscreenid", "25")
+                .addCustomTargeting("pos", "25")
+                .addCustomTargeting("deviceid", "25")
                 .build()
+
         views.forEach {
             it.loadAd(adRequest)
         }

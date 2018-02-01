@@ -1,1 +1,1 @@
-include ':app', ':doubleclickdemo2'
+include ':app'
